@@ -2,28 +2,46 @@
 
 @section('content')
 
-    <h2>Register</h2>
-    <form method="POST" action="/register">
-        {{ csrf_field() }}
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" name="name">
+    <body>
+
+        <div class="main-w3layouts wrapper">
+            <h1>MISS GRAND INTERNATIONAL</h1>
+            <div class="main-agileinfo">
+                <div class="agileits-top">
+                    <form method="POST" action="/register">
+                        {{ csrf_field() }}
+                        <input class="text" type="text" name="Username" placeholder="Username" required="">
+                        <input class="text email" type="email" name="email" placeholder="Email" required="">
+                        <input class="text" type="password" name="password" placeholder="Password" required="">
+                        <input class="text w3lpass" type="password" name="password" placeholder="Confirm Password"
+                            required="">
+                        <div class="wthree-text">
+                            <label class="anim">
+                                <input type="checkbox" class="checkbox" required="">
+                                <span>I agree to the Terms and Conditions</span>
+                            </label>
+                            <div class="clear"> </div>
+                        </div>
+                        <input type="submit" value="SIGNUP">
+                    </form>
+                    <p>Don't have an Account? <a href="#"> Login Now!</a></p>
+                </div>
+            </div>
+            <ul class="colorlib-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
 
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" name="email">
-        </div>
+    </body>
 
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" class="form-control" id="password" name="password">
-        </div>
-
-        <div class="form-group">
-            <button style="cursor:pointer" type="submit" class="btn btn-primary">Submit</button>
-        </div>
-
-    </form>
-
+    </html>
 @endsection
